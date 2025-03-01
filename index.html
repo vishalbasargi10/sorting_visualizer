@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <!DOCTYPE html>
 <html lang="en">
@@ -210,3 +211,173 @@
 		></script>
 	</body>
 </html>
+=======
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+	/>
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+		crossorigin="anonymous"
+	/>
+	<link rel="stylesheet" href="styles.css" />
+	<title>Sorting Visualizer</title>
+</head>
+
+
+
+<body>
+	<div class="root">
+		<header>
+			<a href="/" style="text-decoration: none;">
+				<p class="hd-txt"><strong>Sorting Visualizer</strong></p>
+			</a>
+		</header>
+
+		<div class="main-cnt">
+			<div class="menu">
+				<div class="othr-btns">
+					<div>
+						<input
+							type="range"
+							min="10"
+							max="100"
+							value="20"
+							step="10"
+							name="size"
+							class="slider"
+							id="size"
+						/>
+						<label for="size" style="color: #395144;">Size  </label>
+						<span id="sizeValue">20</span>
+					</div>
+					
+					<div>
+						<input
+							type="range"
+							min="10"
+							max="410"
+							value="60"
+							step="50"
+							name="speed"
+							class="slider"
+							id="speed"
+						/>
+						<label for="speed" style="color: #395144;">Speed</label>
+						<span id="speedValue">60</span>
+					</div>
+					<br>
+					<br>
+					<script>
+						const sizeSlider = document.getElementById("size");
+						const sizeValue = document.getElementById("sizeValue");
+						const speedSlider = document.getElementById("speed");
+						const speedValue = document.getElementById("speedValue");
+					
+						sizeSlider.addEventListener("input", function () {
+							sizeValue.textContent = this.value;
+						});
+					
+						speedSlider.addEventListener("input", function () {
+							speedValue.textContent = this.value;
+						});
+					</script>
+					<div>
+						<button class="btn btn-sm btn-clr" id="random-array" type="button">
+							Random Array
+						</button>
+					</div>
+					<div>
+						<button class="btn btn-sm btn-clr" id="reversed-array" type="button">
+							Reversed Array
+						</button>
+					</div>
+					<div>
+						<button class="btn btn-sm btn-clr" id="sorted-array" type="button">
+							Sorted Array
+						</button>
+					</div>
+					<div>
+						<button class="btn btn-sm reload" id="reload">Reload</button>
+					</div>
+				</div>
+				<div class="srt-btn">
+					<div>
+						<button class="btn btn-sm btn-clr" id="bubble" type="button">
+							Bubble Sort
+						</button>
+					</div>
+					<div>
+						<button class="btn btn-sm btn-clr" id="selection" type="button">
+							Selection Sort
+						</button>
+					</div>
+					<div>
+						<button class="btn btn-sm btn-clr" id="insertion" type="button">
+							Insertion Sort
+						</button>
+					</div>
+					<div>
+						<button class="btn btn-sm btn-clr" id="merge" type="button">
+							Merge Sort
+						</button>
+					</div>
+					<div>
+						<button class="btn btn-sm btn-clr" id="quick" type="button">
+							Quick Sort
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="bars-cnt" id="bars">
+					<!-- Bars -->
+			</div>
+			<!-- <div>
+				Future Content Here [Need to Change CSS Grid Column]
+			</div> -->
+		</div>
+		<footer class="py-3 border-top">
+			<div>
+				Vishal Basargi          
+			</div>
+			<div>
+				+91 9481685589
+			</div>
+		</footer>
+	</div>
+
+		<script src="sorting.js"></script>
+		<script src="bubble.js"></script>
+		<script src="selection.js"></script>
+		<script src="insertion.js"></script>
+		<script src="merge.js"></script>
+		<script src="quick.js"></script>
+		<!-- <script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://kit.fontawesome.com/8188a82202.js"
+			crossorigin="anonymous"
+		></script> -->
+	</body>
+</html>
+>>>>>>> 90bf133 (changes done)
